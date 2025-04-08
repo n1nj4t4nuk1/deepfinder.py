@@ -163,4 +163,3 @@ users: list = DeepFinderList([{
 print(users.deep_find('0.pokemons.?.ball'))
 # output: 'superball'
 ```
-
