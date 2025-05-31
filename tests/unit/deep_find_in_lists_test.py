@@ -14,7 +14,7 @@ class TestFindInLists(unittest.TestCase):
         
         Expected: deep_find(['a', 'b', 'c'], '0') -> 'a'
         """
-        data: [str] = ['a', 'b', 'c']
+        data: list[str] = ['a', 'b', 'c']
         result = deep_find(data, '0')
         self.assertEqual(result, 'a')
 
@@ -29,7 +29,7 @@ class TestFindInLists(unittest.TestCase):
         
         Expected: deep_find(['a', 'b', 'c'], 'b') -> None
         """
-        data: [str] = ['a', 'b', 'c']
+        data: list[str] = ['a', 'b', 'c']
         result = deep_find(data, 'b')
         self.assertEqual(result, None)
 
@@ -44,7 +44,7 @@ class TestFindInLists(unittest.TestCase):
         
         Expected: deep_find(['a', 'b', 'c'], '[]') -> None
         """
-        data: [str] = ['a', 'b', 'c']
+        data: list[str] = ['a', 'b', 'c']
         result = deep_find(data, '[]')
         self.assertEqual(result, None)
 
