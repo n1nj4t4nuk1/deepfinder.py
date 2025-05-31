@@ -49,7 +49,7 @@ pip install deepfinder
 
 ## Quick Start
 
-### Basic Usage
+### Basic Dictionary Access
 
 ```python
 from deepfinder import deep_find
@@ -65,30 +65,6 @@ user = {
 # Get the pokehub link
 result = deep_find(user, 'links.pokehub')
 print(result)  # Output: '@ash'
-```
-
-### Working with Objects
-
-```python
-from deepfinder import deep_find
-
-class Address:
-    def __init__(self, city, country):
-        self.city = city
-        self.country = country
-
-class User:
-    def __init__(self, name, address):
-        self.name = name
-        self.address = address
-
-# Create nested objects
-address = Address('Pallet Town', 'Kanto')
-user = User('Ash', address)
-
-# Access nested object attributes
-result = deep_find(user, 'address.city')
-print(result)  # Output: 'Pallet Town'
 ```
 
 ### Working with Lists
@@ -120,7 +96,29 @@ result = deep_find(user, 'pokemons.*.name')
 print(result)  # Output: ['pikachu', 'charmander']
 ```
 
-## Advanced Features
+### Working with Objects
+
+```python
+from deepfinder import deep_find
+
+class Address:
+    def __init__(self, city, country):
+        self.city = city
+        self.country = country
+
+class User:
+    def __init__(self, name, address):
+        self.name = name
+        self.address = address
+
+# Create nested objects
+address = Address('Pallet Town', 'Kanto')
+user = User('Ash', address)
+
+# Access nested object attributes
+result = deep_find(user, 'address.city')
+print(result)  # Output: 'Pallet Town'
+```
 
 ### Finding First Non-Null Value
 
@@ -199,14 +197,6 @@ users = DeepFinderList([{
 result = users.deep_find('0.pokemons.?.ball')
 print(result)  # Output: 'superball'
 ```
-
-## Path Syntax Reference
-
-- `.` - Access dictionary keys
-- `0`, `1`, etc. - Access list items by index
-- `*` - Get all items in a list
-- `?` - Get first non-null value
-- `*?` - Get all non-null values
 
 ## Contributing
 
