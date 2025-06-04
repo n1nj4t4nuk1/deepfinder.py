@@ -3,6 +3,16 @@ on:
     types: [published]
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clone and checkout branch
+        uses: actions/checkout@v1
+      - name: Build project
+        run: make
+      - name: Run tests
+        run: make test
+        
   pypi-publish:
     name: Upload release to PyPI
     runs-on: ubuntu-latest
