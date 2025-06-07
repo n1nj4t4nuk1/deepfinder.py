@@ -1,5 +1,3 @@
-name: Publish
-
 on:
   release:
     types: [published]
@@ -14,31 +12,28 @@ jobs:
         run: make
       - name: Run tests
         run: make test
-
-
-  publish-pip:
+        
+  pypi-publish:
     needs: build
+    name: Upload release to PyPI
     runs-on: ubuntu-latest
+    environment:
+      name: pypi
+      url: https://pypi.org/p/deepfinder
+    permissions:
+      id-token: write
     steps:
-      - name: Clone and checkout branch
-        uses: actions/checkout@v1
-
       - name: Set up Python version
         uses: actions/setup-python@v2
         with:
           python-version: '3.10'
-
+      - name: Clone and checkout branch
+        uses: actions/checkout@v1
       - name: Install build and twine
         run: pip install -U build twine
-
       - name: Build package
         run: python -m build
-
       - name: Check binaries
         run: twine check dist/*
-
-      - name: Publish a Python distribution to PyPI
+      - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-        with:
-          user: __token__
-          password: ${{ secrets.PYPI_API_TOKEN }}
