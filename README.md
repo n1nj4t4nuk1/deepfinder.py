@@ -1,4 +1,4 @@
-# 🔍 Deepfinder
+<h1 align="center"> Deepfinder</h1>
 
 [![GitHub](https://img.shields.io/github/license/n1nj4t4nuk1/deepfinder.py)](https://github.com/n1nj4t4nuk1/deepfinder.py/blob/main/LICENSE)
 [![Pypi](https://img.shields.io/pypi/v/deepfinder)](https://pypi.org/project/deepfinder/)
