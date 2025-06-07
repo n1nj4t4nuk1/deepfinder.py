@@ -1,9 +1,13 @@
 <h1 align="center"> Deepfinder</h1>
 
+<div align="center">
+
 [![GitHub](https://img.shields.io/github/license/n1nj4t4nuk1/deepfinder.py)](https://github.com/n1nj4t4nuk1/deepfinder.py/blob/main/LICENSE)
 [![Pypi](https://img.shields.io/pypi/v/deepfinder)](https://pypi.org/project/deepfinder/)
 [![Downloads](https://pepy.tech/badge/deepfinder)](https://pepy.tech/project/deepfinder)
 [![GA](https://github.com/n1nj4t4nuk1/deepfinder.py/workflows/Tests/badge.svg)](https://github.com/n1nj4t4nuk1/deepfinder.py/actions/workflows/test.yml)
+
+</div>
 
 ![](https://raw.githubusercontent.com/n1nj4t4nuk1/deepfinder.py/assets/assets/logo.png)
 
