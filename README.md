@@ -1,4 +1,4 @@
-<h1 align="center"> Deepfinder</h1>
+<h1 align="center">🔍 Deepfinder</h1>
 
 <div align="center">
 
