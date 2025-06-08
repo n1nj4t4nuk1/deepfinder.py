@@ -9,8 +9,6 @@
 
 </div>
 
-![](https://raw.githubusercontent.com/n1nj4t4nuk1/deepfinder.py/assets/assets/logo.png)
-
 ## What is Deepfinder?
 
 Deepfinder is a Python library that makes it easy to access nested data in dictionaries, lists, and objects using simple dot notation. Instead of writing complex nested access code, you can use intuitive paths like `'users.0.name'` to get the data you need.
