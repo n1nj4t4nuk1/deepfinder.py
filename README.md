@@ -213,7 +213,7 @@ This project **may be a *mirror*** of another primary repository. Below is a lis
 | Service  | Repository URL                                              | Type      | Sync Frequency        |
 |----------|-------------------------------------------------------------|-----------|-----------------------|
 | Codeberg | `https://codeberg.org/n1nj4t4nuk1/deepfinder.py`            | Primary   | N/A                   |
-| Github   | `https://github.com/n1nj4t4nuk1/deepfinder.py`              | Mirror    | Every 8 hours         |
+| Github   | `https://github.com/n1nj4t4nuk1/deepfinder.py`              | Mirror    | Every commit          |
 
 > ⚠️ Note: If you are viewing this repository on a platform like GitHub, GitLab, Gitea, Forgejo, etc., be aware that it **might not be the main repository**.
 
